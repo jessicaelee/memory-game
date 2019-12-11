@@ -1,3 +1,82 @@
+* {
+    margin: auto;
+    text-align: center;
+}
+
 body {
-    background-image: blu_stripes;
+    background-image: url("tileable_wood_texture.png");
+
+}
+
+header {
+
+    font-family: "Bebas Neue", cursive;
+    font-size: 60px;
+    margin: -5px 10px 10px 10px;
+    padding: 10px;
+}
+
+.score {
+    font-family: "Raleway", sans-serif;
+    margin: -40px 20px 10px 20px;
+    padding: 10px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+#high-score {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.container {
+    margin-bottom: 20px;
+    background-color: white;
+    height: 670px;
+    width: 1000px;
+}
+
+.game {
+    perspective: 600px;
+
+    display: inline-block;
+
+}
+
+.card {
+    margin: 13px 13px;
+    height: 105px;
+    width: 105px;
+    color: transparent;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.card-front, .card-back {
+    /* margin: 13px 13px; */
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-front {
+    background-color: pink;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/tiny-icons-1/100/tiny-26-512.png")
+    /* z-index: 2; */
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: black;
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
 }
