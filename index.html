@@ -13,66 +13,23 @@
     </head>
     <body>
         <header><h1>Memory Game</h1></header>
-        <div id="high-score" class="score">High Score: 0</div>
-        <div id="current-score" class="score">Current Score: 0</div>
-        <div class="container">
-            <div id="game">
-                <div class="card" id="1">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-                <div class="card" id="2">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-                <div class="card" id="3">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-                <div class="card" id="4">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-                <div class="card" id="5">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-                <div class="card" id="6">
-                    <div class="card-face card-front"></div>
-                    <div class="card-face card-back"></div>
-                </div>
-
-                <br />
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <br />
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <br />
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <br />
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <div class="cards" href=""></div>
-                <br />
-            </div>
+        <div class="score" id="best-score">
+            Best Score:
+            <p id="high-score" class="player-score"></p>
+        </div>
+        <div class="score">
+            Current Score:
+            <p id="current-score" class="player-score"></p>
+        </div>
+        <br />
+        
+        <button id="start-game" onclick="startGame()">New Game</button>
+        <div class="container" id="container">
+            <div id="game"></div>
         </div>
         <script src="memory-game.js"></script>
+    
+           
+        </div>
     </body>
 </html>

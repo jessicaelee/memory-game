@@ -4,12 +4,14 @@
 }
 
 body {
-    background-image: url("tileable_wood_texture.png");
+    background-image: url("cork-board.png");
+}
 
+p {
+    display: inline-block;
 }
 
 header {
-
     font-family: "Bebas Neue", cursive;
     font-size: 60px;
     margin: -5px 10px 10px 10px;
@@ -22,61 +24,160 @@ header {
     padding: 10px;
     font-size: 25px;
     display: inline-block;
+    position: relative;
 }
 
-#high-score {
+.player-score {
+    position: absolute;
+    margin-left: 15px;
+}
+
+#best-score {
     font-weight: bold;
     font-size: 28px;
 }
 
+#high-score-new-game {
+    display: none;
+}
+
+button {
+    margin-top: 100px;
+    height: 50px;
+    width: 170px;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    border-width: 2px;
+    border-color: #331a00;
+}
+
 .container {
+    display: none;
     margin-bottom: 20px;
-    background-color: white;
-    height: 670px;
-    width: 1000px;
+    background-color: #f9f0ea;
+    height: 585px;
+    width: 1020px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #331a00;
 }
 
 .game {
-    perspective: 600px;
+    perspective: 650px;
 
     display: inline-block;
-
 }
 
 .card {
     margin: 13px 13px;
-    height: 105px;
-    width: 105px;
+    height: 115px;
+    width: 175px;
     color: transparent;
-    transition: 0.6s;
+    transition: 0.5s;
     transform-style: preserve-3d;
     position: relative;
     transform: scale(1);
     display: inline-block;
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
     /* margin: 13px 13px; */
+    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     backface-visibility: hidden;
     position: absolute;
     top: 0;
     left: 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #331a00;
 }
 
 .card-front {
-    background-color: pink;
-    background-image: url("https://cdn0.iconfinder.com/data/icons/tiny-icons-1/100/tiny-26-512.png")
-    /* z-index: 2; */
+    background-image: url("floor-tile.png");
+    background-size: 100%;
+    z-index: 2;
     transform: rotateY(0deg);
 }
 
 .card-back {
-    background-color: black;
+    background-color: #f9f0ea;
     transform: rotateY(180deg);
 }
 
 .card.is-flipped {
     transform: rotateY(180deg);
+}
+
+.paris {
+    background-image: url("paris.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+}
+
+.japan {
+    background-image: url("japan.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.africa {
+    background-image: url("africa.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.india {
+    background-image: url("india.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.london {
+    background-image: url("london.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.iceland {
+    background-image: url("iceland.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.china {
+    background-image: url("china.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.newyork {
+    background-image: url("newyork.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.australia {
+    background-image: url("australia.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hawaii {
+    background-image: url("hawaii.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -1,0 +1,7 @@
+1. add images
+2. add js - if two image links are the same, leave them up 
+3. if two image links are not the same, turn them over, 
+4. if two image links are the same, remove their class so they cant get flipped anymore
+5. add start button 
+6. count score 
+7. add high score
